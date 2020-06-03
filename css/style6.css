@@ -1,0 +1,785 @@
+/*
+
+
+======================================
+    
+       public style
+
+
+=======================================
+
+*/
+
+
+*,*::after,*::before{
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+body{
+   
+    font-family: candara;
+}
+.cont{
+    width: 80%;
+    margin: auto;
+}
+/*
+
+
+======================================
+    
+       section1 style
+
+
+=======================================
+
+*/
+
+section.conrad header div.logo{
+    width: 50%;
+    
+    float: left;
+    padding: 10px 10px 0;
+    font-size: 25px;
+    color: white;
+}
+
+.act{
+     
+    
+     left: 60%;
+   
+  
+        
+}
+
+section.conrad header div.aside_navbar{
+    width: 40%;
+   
+    float: right;
+    overflow: hidden;
+   display: none;
+    position: fixed;
+ 
+    top: 0;
+    transition: all 5s ease-in-out;
+        
+  
+}
+section.conrad header div.aside_navbar i{
+    width: 25%;
+    
+    float: left;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 25px;
+    line-height: 1.5em;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    
+}
+
+section.conrad header div.aside_navbar nav.aside{
+    width: 75%;
+    float: right;
+    background-color: black;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 250px;
+   
+    
+}
+section.conrad header div.aside_navbar nav.aside h1{
+    color: white;
+    padding: 20px 0;
+    font-size: 1.5rem;
+}
+
+section.conrad header div.aside_navbar nav.aside ul li{
+    
+    list-style: none;
+    
+    display: block;
+    
+}
+
+section.conrad header div.aside_navbar nav.aside ul li a{
+    color: white;
+    padding: 10px 0;
+    display: block;
+    transition: all .5s ease-in-out;
+}
+section.conrad header div.aside_navbar nav.aside ul li a:hover{
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
+section.conrad header{
+   
+    overflow: hidden;
+}
+
+section.conrad header nav.navbar{
+    width: 50%;
+    float: right;
+    padding: 17px 0 0;
+}
+
+section.conrad header nav.navbar ul li{
+    display: inline-block;
+    list-style: none;
+}
+
+section.conrad header nav.navbar ul li a{
+    color: white;
+       padding: 22px 20px;
+    font-size: 14px;
+  
+    margin-right: -4px;
+}
+section.conrad header nav.navbar ul li a:hover{
+    color: rgb(190, 190, 190);
+}
+section.conrad header nav.navbar ul li a.lin:hover{
+    color: #000;
+    background-color: white;
+    
+    
+}
+section.conrad header nav.navbar ul li a{
+    text-decoration: none;
+}
+section.conrad div.dig{
+     padding-left: 10px;
+    padding-top: 100px;
+    text-transform: uppercase;
+    
+}
+section.conrad div.dig p:first-child{
+    
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    word-spacing: 5px;
+    letter-spacing: 5px;
+    
+}
+
+section.conrad div.dig p:last-child{
+    
+    color: white;
+    
+    
+}
+section.conrad div.dig p:last-child span{
+    transition: all 2s ease-in-out;
+    display: inline-block;
+}
+section.conrad div.dig p:last-child:hover span{
+    
+    transform: rotate(360deg);
+}
+
+
+
+@media(max-width:1025px){
+    
+    .cont{
+        width: 100%;
+    
+    }
+    
+    section.conrad header nav.navbar{
+        display: none;
+    }
+    section.conrad header div.aside_navbar{
+        display: block;
+        width: 40%;
+        right: -30%;
+    }
+    section.conrad header div.logo{
+        width: 60%;
+    }
+    
+    
+}
+
+
+/*
+
+
+======================================
+    
+       section2 style
+
+
+=======================================
+
+*/
+section.about{
+    
+    margin:5% 0;
+    
+}
+section.about div.cont{
+   
+    overflow: hidden;
+}
+
+section.about div.creat1{
+    overflow: hidden;
+    width: 32%;
+    background-color: white;
+    float: left;
+    margin-right: 2%;
+    
+    
+}
+section.about div.creat2{
+    margin-right: 0;
+}
+
+section.about div.creat1 h2{
+    font-weight: bold;
+    padding: 10px;
+}
+section.about div.creat1 p:first-of-type{
+    
+    padding: 10px;
+    font-size: 16px;
+    
+    
+}
+section.about div.creat1 p:nth-of-type(2){
+    padding: 10px ;
+    font-size: 14px;
+    color: #999;
+}
+
+section.about div.creat1 p:nth-of-type(3){
+    padding: 10px;
+   
+}
+section.about div.creat1 p:nth-of-type(3) a{
+    color: black;
+    font-weight: 400;
+}
+section.about div.creat1 div.awseome{
+    position: relative;
+    overflow: hidden;
+    transition: all 2s ease-in-out;
+    cursor: pointer;
+}
+section.about div.creat1 div.awseome img{
+    width: 100%;
+    transition: all 2s ease-in-out;
+    height: 200px;
+    z-index: 1;
+}
+section.about div.creat1 div.awseome:hover img{
+    transform: scale(1.2);
+    transition: all 2s ease-in-out;
+}
+section.about div.creat1 div.awseome div:first-of-type{
+    position:absolute;
+    top: -200px;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background-color: rgba(0,0,0,.4);
+     transition: all 2s ease-in-out;
+}
+section.about div.creat1 div.awseome div:first-of-type i{
+    color: white;
+    font-size: 50px;
+    width: 50%;
+    cursor: pointer;
+    text-align: center;
+    
+    margin: 80px 70px;
+}
+section.about div.creat1 div.awseome:hover .rel{
+    top: 0;
+    transition: all 2s ease-in-out;
+}
+section.about div.creat1 div.awseome div:first-of-type i:hover{
+    
+    animation: moh 4s infinite ease-in-out;
+}
+@keyframes moh {
+    0%{
+        color: white;
+        font-size: 50px;
+    }
+     10%{
+        color:#ffdedd;
+         font-size: 45px;
+    }
+     20%{
+        color: #ffcbc9;
+         font-size: 40px;
+    }
+     30%{
+        color: #fbb8b5;
+         font-size: 35px;
+    }
+     40%{
+        color:#ffa5a2 ;
+         font-size: 30px;
+    }
+    50%{
+        color:#ff928e ;
+        font-size: 25px;
+    }
+    60%{
+        color:#ff7e7b ;
+        font-size: 20px;
+    }
+    70%{
+        color:#ff6b67 ;
+        font-size: 15px;
+    }
+    80%{
+        color:#ff5853 ;
+        font-size: 10px;
+    }
+    90%{
+        color:#ff4540 ;
+        font-size: 5px;
+    }
+    100%{
+        color:#ff322c ;
+        font-size: 0px;
+    }
+}
+
+
+
+
+
+section.about div.creat1 div.awseome1 h3{
+    
+    padding: 20px 0;
+}
+
+
+@media(max-width:1025px){
+    
+    section.about div.creat1{
+        float: none;
+        width: 98%;
+        margin: auto;
+        text-align: center;
+    }
+    
+    
+    
+}
+
+
+/*
+
+
+======================================
+    
+       section3 style
+
+
+=======================================
+
+*/
+section.folio{
+    overflow: hidden;
+}
+section.folio div:first-of-type{
+    width: 80%;
+    margin: 250px auto;
+    text-transform: capitalize;
+    color: white;
+    text-align: center;
+}
+
+section.folio div:first-of-type p span{
+    color: #eee;
+}
+section.folio div:first-of-type p:nth-of-type(2){
+    display: none;
+}
+section.folio div:first-of-type button{
+   padding: 10px 35px;
+    margin-top: 15px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    outline: 0;
+    cursor: pointer;
+}
+section.folio div:first-of-type button:hover{
+    background-color: black;
+    color: white;
+    border: 1px solid #000;
+}
+.con{
+    width: 100%;
+   
+    top: -10%;
+    transition: all 1.5s ease-in-out;
+    z-index: 2;
+}
+.add{
+    position: fixed;
+    background-color: black;
+    
+    top: 0;
+    left: 0;
+}
+/*
+
+
+======================================
+    
+       section4 style
+
+
+=======================================
+
+*/
+
+section.solution{
+    margin: 3% 0;
+    
+    overflow: hidden;
+}
+section.solution div.cont div.sol{
+    float: left;
+    width: 50%;
+    overflow: hidden;
+   
+   padding: 10px;
+}
+section.solution div.cont div.sol1{
+    float: left;
+    width: 50%;
+    overflow: hidden;
+   
+   padding: 10px;
+}
+
+section.solution div.cont div.sol  p{
+    padding-top: 15px;
+    
+}
+section.solution div.cont div.sol  p:nth-of-type(1){
+    color: #555;
+    font-size: 20px;
+    
+}
+section.solution div.cont div.sol  p:nth-of-type(2){
+    color: #999;
+    font-size: 14px;
+    
+}
+section.solution div.cont div.sol  p a{
+    color: black;
+}
+section.solution div.cont div.sol  p a:hover{
+    text-decoration: none;
+}
+section.solution div.cont div.sol  p a span{
+    display: inline-block;
+    transition: all 2s ease-in-out;
+    color: black;
+   
+}
+section.solution div.cont div.sol  p:hover a span{
+    transform: rotate(360deg);
+}
+section.solution div.cont div.sol1 h2{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0;
+    border-bottom: 1px solid #ddd;
+}
+section.solution div.cont div.sol1 p{
+    background-color: #ddd;
+    color: #555;
+    padding: 10px;
+    display: none;
+    margin: 0;
+}
+/*
+
+
+======================================
+    
+       section5 style
+
+
+=======================================
+
+*/
+section.blog{
+    overflow: hidden;
+    margin-bottom: 3%;
+    background-color: #e62739;
+}
+section.blog div.log , section.blog div.log1{
+    width: 50%;
+    float: left;
+    overflow: hidden;
+    color: white;
+    
+    
+}
+section.blog div.log h2{
+    padding-top: 20%;
+
+}
+
+section.blog div.log p{
+    padding-top: 20px;
+    padding-left: 5px;
+}
+section.blog div.log p a{
+    color: white;
+}
+
+section.blog div.log p a:hover{
+    text-decoration: none;
+}
+
+section.blog div.log p a span{
+    display: inline-block;
+    transition: all 2s ease-in-out;
+}
+
+section.blog div.log p:hover a span{
+    transform: rotate(360deg);
+}
+section.blog div.log1 div.inf{
+    width: 50%;
+    margin: 25% auto;
+
+}
+section.blog div.log1 div.inf div.left{
+    float: left;
+    overflow: hidden;
+    width: 50%;
+
+
+}
+
+section.blog div.log1 div.inf div.right{
+    float:right;
+    overflow: hidden;
+    width: 50%;
+}
+section.blog div.log1 div.inf p{
+    font-size: 2.5em;
+    margin-bottom: 3%;
+}
+section.blog div.log1 div.inf span{
+    color: rgb(219, 217, 217);
+}
+/*
+
+
+======================================
+    
+       section6 style
+
+
+=======================================
+
+*/
+
+section.recent{
+    margin: 3% 0 0;
+    overflow: hidden;
+}
+section.recent div.center{
+    text-align: center;
+    padding-bottom: 30px;
+}
+section.recent div.center h2{
+    font-size: 5em;
+    padding: 30px 0;
+}
+section.recent div.center nav a{
+    color: #555;
+    padding: 20px;
+    cursor: pointer;
+}
+section.recent div.center nav a:hover{
+    text-decoration: none;
+}
+section.recent div.center nav a.black{
+    color: #000;
+}
+section.recent div.images{
+    overflow: hidden;
+}
+section.recent div.images div.left-1{
+    float: left;
+    width: 50%;
+    overflow: hidden;
+}
+section.recent div.images div.right-1{
+    float: left;
+    width: 50%;
+    overflow: hidden;
+}
+section.recent div.images div.left-1 div.par{
+    width: 50%;
+    overflow: hidden;
+    float: left;
+}
+section.recent div.images div.left-1 div.par-1{
+    width: 50%;
+    overflow: hidden;
+    float: left;
+}
+section.recent div.images div.right-1 div.bar-1{
+    width: 50%;
+    overflow: hidden;
+    float: left;
+}
+section.recent div.images div.right-1 div.bar-2{
+    width: 50%;
+    overflow: hidden;
+    float: left;
+}
+/*
+
+
+======================================
+    
+       section7 style
+
+
+=======================================
+
+*/
+section.cleants{
+    
+    overflow: hidden;
+    clear: both;
+    background-color: #9068be;
+    padding: 70px 0 120px;
+    color: white;
+
+}
+section.cleants div.cleant{
+    width: 20%;
+    overflow: hidden;
+    float: left;
+    text-align: center;
+    padding: 10px 0 20px;
+}
+section.cleants div.cleant p{
+       
+    font-size: 20px;
+    font-weight: 600
+}
+section.cleants div.cleant span{
+    padding-bottom: 25px;
+    display: block;
+}
+/*
+
+
+======================================
+    
+       section7 style
+
+
+=======================================
+
+*/
+section.rose{
+  
+    background-color: #333;
+    color: white;
+    overflow: hidden;
+    padding: 100px 0;
+}
+section.rose footer div.arrow{
+    width: 25%;
+    float: left;
+    overflow: hidden;
+    
+}
+section.rose footer div.arrow a{
+    color: #999;
+    line-height: 2.2;
+
+}
+section.rose footer div.arrow a:hover{
+    text-decoration: none;
+}
+section.rose footer div.arrow p{
+    font-size: 20px;
+    color: #999;
+}
+section.rose footer div.arrow h3{
+    margin-bottom: 5%;
+}
+section.rose footer div.arrow input{
+    display: block;
+    outline: 0;
+    padding: 10px;
+    margin-bottom: 2%;
+    color: #999;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #999;
+}
+section.rose footer div.arrow input[type=submit]{
+    border:1px solid #999;
+    margin-top: 4%;
+}
+section.rose footer div.arrow span{
+    color: #999
+}
+/*
+
+
+======================================
+    
+       section8 style
+
+
+=======================================
+
+*/
+section.end {
+    background-color: #000;
+    
+    overflow: hidden;
+    clear: both;
+}
+section.end div.jar,section.end div.jar-1{
+    width: 50%;
+    float: left;
+    overflow: hidden;
+    height: 100px;
+    color: #999;
+    padding: 10px;
+   
+}
+section.end div.jar-1{
+    text-align: right;
+}
+section.end div.jar-1 a{
+    color: #999;
+    display: block;
+}
+section.end div.jar-1 a:hover{
+    text-decoration: none;
+}
